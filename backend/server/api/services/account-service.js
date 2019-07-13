@@ -3,6 +3,7 @@
 const {omit} = require('lodash');
 const Boom = require('@hapi/boom');
 
+const utils = require('../../utils');
 const AccountDao = require('../dao/account-dao');
 const CustomerDao = require('../dao/customer-dao');
 const Account = require('../models/account-model');
@@ -39,4 +40,10 @@ exports.createAccount = ({customerId, initCredit, currency}) => {
       }
     })
     .then(() => omit(account, ['_id', 'createdAt']));
+};
+
+exports.getAccountsByCustomerId = (customerId) => {
+  utils.assertExists(customerId, 'customerId');
+
+  return accountDao.findAccounts(customerId);
 };

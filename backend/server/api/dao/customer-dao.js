@@ -17,13 +17,6 @@ class CustomerDao {
         return customers.findOne({'id': customerId});
       })
   }
-
-  createCustomer(customer) {
-    return this.collection
-      .then((customers) => {
-        return customers.insertOne(customer);
-      });
-  }
 }
 
 module.exports = CustomerDao;
