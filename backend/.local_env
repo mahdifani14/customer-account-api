@@ -1,0 +1,4 @@
+MONGODB_URL=mongodb://localhost:27017
+MONGODB_NAME=customer
+LOG_DEBUG_ENABLED=true
+PORT=8080
