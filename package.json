@@ -1,0 +1,18 @@
+{
+  "name": "customer-account",
+  "version": "1.0.0",
+  "description": "Customer Account API",
+  "main": "",
+  "scripts": {
+    "start": "npm-run-all --parallel mongodb runBackend runFrontend",
+    "start:backend": "npm-run-all --parallel mongodb runBackend",
+    "mongodb": "npm i -g mongod && mongod",
+    "runBackend": "cd frontend && npm install && npm start",
+    "runFrontend": "cd backend && npm install && npm start"
+  },
+  "author": "Mahdi FaniDisfani <mahdifani1369@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "4.1.5"
+  }
+}
