@@ -1,0 +1,20 @@
+[
+  {
+    "id": "f5ed845b-7aaf-4079-8526-a70dad1cfff2",
+    "customerId": "5a34f3d4-3476-4e24-90d7-faf632b58e85",
+    "deposit": {
+      "value": 14000,
+      "currency": "EUR"
+    },
+    "createdAt": "2019-07-13"
+  },
+  {
+    "id": "f5ed845b-8aaf-4079-8526-a70dad1cfff2",
+    "customerId": "5a34f3d4-3476-4e24-90d7-faf632b58e85",
+    "deposit": {
+      "value": 24000,
+      "currency": "EUR"
+    },
+    "createdAt": "2019-07-13"
+  }
+]
