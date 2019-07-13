@@ -7,8 +7,8 @@
     "start": "npm-run-all --parallel mongodb runBackend runFrontend",
     "start:backend": "npm-run-all --parallel mongodb runBackend",
     "mongodb": "npm i -g mongod && mongod",
-    "runBackend": "cd frontend && npm install && npm start",
-    "runFrontend": "cd backend && npm install && npm start"
+    "runBackend": "cd backend && npm install && npm start",
+    "runFrontend": "cd frontend && npm install && npm start"
   },
   "author": "Mahdi FaniDisfani <mahdifani1369@gmail.com>",
   "license": "MIT",
