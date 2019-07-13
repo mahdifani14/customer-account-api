@@ -8,13 +8,15 @@ const utils = require('../../utils');
 const schema = Joi.object({
   id: Joi.string().guid({version: ['uuidv4']}).required(),
   name: Joi.string().required(),
+  surname: Joi.string().required(),
   createdAt: Joi.date()
 });
 
 class Customer {
 
-  constructor(name) {
+  constructor(name, surname) {
     utils.assertExists(name, 'name');
+    utils.assertExists(surname, 'surname');
 
     this.id = uuidv4();
     this.name = name;
@@ -39,6 +41,7 @@ class Customer {
 
   /**
    * @param {String} doc.name
+   * @param {String} doc.surname
    * @returns {Object}
    */
   static fromDocument(doc) {
@@ -46,7 +49,7 @@ class Customer {
       return null;
     }
 
-    return new Customer(doc.name);
+    return new Customer(doc.name, doc.surname);
   }
 }
 

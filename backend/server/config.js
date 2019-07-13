@@ -65,10 +65,6 @@ const config = {
         {
           name: 'account',
           description: 'Create and get customer accounts'
-        },
-        {
-          name: 'transaction',
-          description: 'Insert and get customer transactions'
         }
       ],
       grouping: 'tags'

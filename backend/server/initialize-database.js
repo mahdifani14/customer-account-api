@@ -21,7 +21,7 @@ function initAccounts(db) {
       const err = Joi.validate(account, Account.schema()).error;
 
       if (err) {
-      	throw new Error(`Error validating accounts: ${err.message || err}`);
+        throw new Error(`Error validating accounts: ${err.message || err}`);
       }
 
       return Promise.resolve()
