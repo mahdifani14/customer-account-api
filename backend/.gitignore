@@ -1,0 +1,18 @@
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+node_modules
+
+coverage
+jsdoc
+
+# Optional npm cache directory
+.npm
+
+# IntelliJ
+.idea
+*.iml
+
+.DS_Store
