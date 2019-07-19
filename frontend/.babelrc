@@ -1,0 +1,43 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "IE > 10"
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        "@babel/preset-react",
+        "react-optimize",
+        "es2015-native-modules",
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "browsers": [
+                "last 2 versions",
+                "IE > 10"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  }
+}
